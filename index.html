@@ -1,7 +1,72 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <style>
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .center {
+            
+            margin: auto;
+            width: 60%;
+            padding: 10px;
+        }
+
+        .intro-pic {
+            
+
+            width: 60%;
+            padding: 10px;
+        }
+
+        .font20 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <div class="row">
+        <div class="column">
+            <div class="center">
+                <div style="text-align: center;">
+                    <h1>Name</h1>
+                    <p class="font20">Position</p>
+                    <p class="font20"> Company</p>
+                    <p class="font20">Company Address</p>
+                    <p class="font20">Email</p>
+                    <p class="font20">Phone</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="intro-pic">
+                <div>
+                    <img src="avt.png" height=290px />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column" style="padding-left: 25px;">
+            <h2>Past Activities:</h2>
+            <ul>
+                <li style="font-size: 20px;">Something</li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
